@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer, util
 import ast
+
+
 openai.api_key =  st.secrets["mykey"]
-
-
 
 df = pd.read_csv("qa_dataset_with_embeddings.csv")
 df['Question_Embedding'] = df['Question_Embedding'].apply(ast.literal_eval)
