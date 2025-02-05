@@ -30,9 +30,6 @@ def find_best_answer(user_question):
    else:
       return "I apologize, but I don't have information on that topic yet. Could you please ask other questions?"
 
-
-# Load the embedding model
-@st.cache_resource
 def load_model():
     model = SentenceTransformer('all-mpnet-base-v2')
     return model
