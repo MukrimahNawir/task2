@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer, util
 
+openai.api_key =  st.secrets["mykey"]
+
 # Load the dataset and embeddings
 @st.cache_data
 def load_data():
