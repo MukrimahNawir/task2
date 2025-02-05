@@ -51,5 +51,3 @@ with st.expander("Commonly Asked Questions"):
     for question in df["Question"].sample(5):  # Show random FAQs
         st.write(f"• {question}")
 rating = st.radio("Was this answer helpful?", ["Yes", "No"])
-
-streamlit run task2mn.py
